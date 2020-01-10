@@ -1,12 +1,33 @@
 server:
+  #接口名称
   port: 7900
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://root:root@localhost:8761/eureka/
   instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
     prefer-ip-address: true
 spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  #模拟数据
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
   application:
+    #微服务名称
     name: user-provider
+#日志信息
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.alan: DEBUG
 

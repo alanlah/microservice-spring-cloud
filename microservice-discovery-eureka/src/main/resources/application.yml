@@ -1,11 +1,21 @@
 #eureka接口
 server:
   port: 8761
-#eureka注册中心
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: root
+    password: root
+#eureka注册中心\
+
 eureka:
   client:
+    healthcheck:
+      enable: true
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://root:root@localhost:8761/eureka
 
