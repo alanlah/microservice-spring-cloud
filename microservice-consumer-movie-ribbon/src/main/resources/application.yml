@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: movie-consumer-ribbon
+server:
+  port: 8010
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://root:root@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
