@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: movie-consumer-ribbon-without-eureka
+server:
+  port: 8020
+eureka:
+  client:
+    instance:
+      prerer-ip-address: true
+    healthcheck:
+      enable: true
+    service-url:
+      defaultZone: http://root:root@localhost:8761/eureka
+
+ribbon:
+  eureka:
+    enabled: false
+#指定7900端口为服务端
+user-provider:
+  ribbon:
+    listOfServers: localhost:7900

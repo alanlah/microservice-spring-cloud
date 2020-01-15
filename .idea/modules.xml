@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservice-common/microservice-common.iml" filepath="$PROJECT_DIR$/microservice-common/microservice-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-feign/microservice-consumer-movie-feign.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-feign/microservice-consumer-movie-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-ribbon/microservice-consumer-movie-ribbon.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-ribbon/microservice-consumer-movie-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-ribbon-customizing/microservice-consumer-movie-ribbon-customizing.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-ribbon-customizing/microservice-consumer-movie-ribbon-customizing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-ribbon-without-eureka/microservice-consumer-movie-ribbon-without-eureka.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-ribbon-without-eureka/microservice-consumer-movie-ribbon-without-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-discovery-eureka.iml" filepath="$PROJECT_DIR$/microservice-discovery-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-provider-user.iml" filepath="$PROJECT_DIR$/microservice-provider-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud.iml" />
