@@ -1,6 +1,6 @@
 server:
   #接口名称
-  port: 7900
+  port: 7901
 eureka:
   client:
     service-url:
