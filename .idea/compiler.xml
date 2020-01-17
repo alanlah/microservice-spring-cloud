@@ -14,6 +14,7 @@
         <module name="microservice-consumer-movie-ribbon-customizing" />
         <module name="microservice-consumer-movie-ribbon-without-eureka" />
         <module name="microservice-discovery-eureka" />
+        <module name="microservice-discovery-eureka-high-availability" />
         <module name="microservice-provider-user" />
       </profile>
     </annotationProcessing>
@@ -26,6 +27,7 @@
       <module name="microservice-consumer-movie-ribbon-customizing" target="1.8" />
       <module name="microservice-consumer-movie-ribbon-without-eureka" target="1.8" />
       <module name="microservice-discovery-eureka" target="1.8" />
+      <module name="microservice-discovery-eureka-high-availability" target="1.8" />
       <module name="microservice-provider-user" target="1.8" />
       <module name="microservice-spring-cloud" target="1.8" />
     </bytecodeTargetLevel>
