@@ -11,6 +11,8 @@ security:
 #eureka注册中心\
 
 eureka:
+  #datacenter: cloud
+  #environment: product
   client:
     healthcheck:
       enable: true

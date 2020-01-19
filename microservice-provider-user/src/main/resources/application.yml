@@ -1,10 +1,13 @@
 server:
   #接口名称
-  port: 7901
+  port: 7900
 eureka:
   client:
     service-url:
-      defaultZone: http://root:root@localhost:8761/eureka/
+      defaultZone: http://root:root@server1:8761/eureka/,http://root:root@server2:8762/eureka/
+     # defaultZone: http://root:root@localhost:8761/eureka/
+     #defaultZone: http://server1:8761/eureka/,http://server2:8762/eureka/
+    #defaultZone: http://root:root@server1:8761/eureka, http://root:root@server2:8762/eureka, http://root:root@server3:8763/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
     prefer-ip-address: true

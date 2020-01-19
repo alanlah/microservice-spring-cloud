@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-server-cluster
+  profiles:
+    active: server1
+security:
+  basic:
+    enabled: true
+  user:
+    name: root
+    password: root

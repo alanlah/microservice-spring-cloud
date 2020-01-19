@@ -1,0 +1,10 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: server1
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://root:root@server2:8762/eureka,http://root:root@server3:8763/eureka
