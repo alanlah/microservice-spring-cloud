@@ -20,6 +20,7 @@
         <module>microservice-consumer-movie-feign-customizing</module>
         <module>microservice-discovery-eureka-high-availability</module>
         <module>microservice-consumer-movie-ribbon-list-to-array</module>
+        <module>microservice-consumer-movie-ribbon-hystrix</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
