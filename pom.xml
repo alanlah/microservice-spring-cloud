@@ -19,6 +19,7 @@
         <module>microservice-consumer-movie-feign</module>
         <module>microservice-consumer-movie-feign-customizing</module>
         <module>microservice-discovery-eureka-high-availability</module>
+        <module>microservice-consumer-movie-ribbon-list-to-array</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -46,14 +47,14 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
+    <!--common 打包会报错，转移到各个项目的pom文件中-->
+    <!--<build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 
 </project>
