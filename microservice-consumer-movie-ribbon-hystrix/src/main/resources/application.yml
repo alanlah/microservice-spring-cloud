@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: movie-consumer-ribbon-hystrix
+server:
+  port: 8014
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://root:root@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+#定义微服务user-provider负载均衡策略，如有多个微服务，则其他的微服务遵循轮循策略
+user-provider:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
